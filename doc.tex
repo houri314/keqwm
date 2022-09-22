@@ -1,0 +1,104 @@
+\documentclass[12pt,letterpaper]{book}
+
+
+\title{\textbf{HOURIN's KEQWM MANUAL}}
+\author{Hourin} 
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+My online alias is Hourin, Satori Hourin. I love dwm for its simplicity
+and its unique way to configure and modify things (editing
+the source code then recompile). It enables a lot more control and freedom
+for the user, expanding beyond the cringe config menus/files that
+most Desktop Environments/Window Managers had. \\
+The reason for this is because dwm is supposed to be "suckless". It doesn't need
+a bloated graphical GUI for customizing that can mimic a fraction of the
+real man's way to configure stuff, neither does it need a new or to use troublesome
+syntaxes for a config file. No. All it takes to configure dwm is knowledge of the C
+programming language, which, let's be honest, virtually all Linux users know. \\
+So anyway, dwm is a dynamic window manager for Xorg. Dynamic, because it's both
+a tiling window manager and a floating/stacking window manager. dwm's customizability is
+undeniable. Customizing it by editing and compiling the source code gives you 100\% control
+over everything. You can change any colors, any text strings, any functions, adding new
+layouts, everything. Also, by using dwm, you would earn the status of a more invested Linux
+user, giving you more privilages in r/unixporn or Linux-related places. \\
+\\
+keqwm is my very own customized dwm. It has few more key shortcuts, some changes to the
+color, how the bar is drawn (without using a bloated bar patch). I also added a few important
+patches to it, for example, fibonacci and centeredmaster (though I'm planning on adding
+swallow, tatami, and alpha patch soon). This manual guides you how to use it.
+
+\section{Key bindings}
+Note: in this section, I use the Emacs-like key notation:
+C-key: pressing key while holding Ctrl.
+M-key: pressing key while holding Meta/Alt.
+S-key: pressing key while holding Super/Window.
+If key is capitalized then you know you have to press Shift.
+
+
+\subsection{Programs}
+M-RETURN: terminal (Alacritty by default) \\
+S-b: browser (Firefox by default) \\
+S-s: terminal with htop (alacritty -e htop) \\
+S-v: terminal with alsamixer \\
+S-return: dmenu \\
+S-e: terminal with Vim \\
+S-E: terminal with Emacs \\
+S-d: terminal with vifm \\
+S-D: file manager (thunar) \\
+
+
+\subsection{Layouts} //FIXME: pdflatex has behavious i didn't know existed
+M-t: tile (default)		[]= \\
+M-f: float (default)		\>\<\> \\
+M-m: monocle (default)		[M] \\
+M-u: centered master		|M| \\
+M-U: centered floating master	\<M\< \\
+S-f: fibonnaci - dwindle	[/\] \\
+S-F: fibonnaci - spiral		(@) \\
+
+
+\subsection{Controls}
+S-RETURN: float/unfloat a window \\
+S-x: kill selected window \\
+M-Q: kill keqwm \\
+S-[arrow keys]: move selected window if floating \\
+S-[ARROW KEYS]: resize selected window if floating \\
+M-j: switch window \\
+M-k: switch window \\
+M-h: decrease master stack size \\
+M-l: increase master stack size \\
+M-i: increase number of masters \\
+M-d: decrease number of masters \\
+M-[number]: go to tag number \\
+M-[NUMBER]: move window to tag number \\
+S-1: mute volume \\
+S-2: volume down \\
+S-3: volume up \\
+M-b: toggle bar \\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
